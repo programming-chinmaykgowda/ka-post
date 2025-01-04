@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* Basic layout */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #fff;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.inputbox {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 3%;
+  padding: 0.4vw 0.7vw;
+  display: inline;
+  width: 44%;
+}
+
+/* Dropdown styles */
+/* Dropdown styles */
+label,
+select {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-weight: bold;
+	color: #0000CD;
+}
+
+select {
+	width: 50%;
+	max-width: 140px;
+	/* Set a maximum width if necessary */
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+/* Button styles */
+button {
+	padding: 10px 20px;
+	background-color: #b22222;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 0.9vw;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 30px;
+	/* Adjust the margin value as needed */
+	transition: 0.3s linear;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
+
+/* Increase font size for specific dropdowns */
+select {
+	/* Adjust the value as needed */
+	color: #000000;
+	font-weight: normal;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	width: 100%;
+	background: #940404;
+	color: #f8f7f7;
+	padding: 0.5rem 1rem;
+	font-family: Poppins;
+	font-size: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+label {
+	margin-right: 10px;
+}
+
+select {
+	padding: 0.44vw;
+	font-size: 0.82vw;
+	margin-right: 10px;
+	width: 100%;
+	border: 2px solid pink;
+	border-bottom-width: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+/* Table styles */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th,
+td {
+	border: 1px solid #000000;
+	padding: 0.3vw 0.4vw;
+	text-align: left;
+	font-size: 0.9387vw;
+	color: black;
+	/* Set the text color to black */
+}
+
+th {
+	background-color: #e3dac9;
+	color: #b22222;
+	text-align: center;
+	padding: 0.5vw 0.4vw;
+	/* Center-align the table headings */
+}
+
+td {
+	text-align: center;
+}
+
+td:first-of-type {
+	text-align: left;
+	padding: 0.4vw 1vw;
+}
+
+tr:last-of-type>td {
+	font-size: 1.15vw;
+}
+
+th,
+td.total-cell {
+	color: #b22222;
+}
+
+.total-cell {
+	font-weight: bold;
+}
+
+#buttons {
+	display: inline-block;
+}
+
+#showingresults {
+	margin-left: 0.6vw;
+	display: inline;
+}
+
+#options-container {
+	padding: 0.4vw 0.7vw 0.7vw 0.7vw;
+
+	border: 1px solid #b213bcc9;
+	border-bottom-width: 2px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	background-color: #f9f9f9;
+}
+
+#options-container #dataavailablefrom,
+#options-container #dataavailableupto {
+	font-size: 0.8vw;
+	margin-top: 0;
+	margin-bottom: 0.3vw;
+}
+
+#options-container #dataavailablefrom {
+	color: #dd0d7efc;
+}
+
+#options-container #dataavailableupto {
+	color: #2327ca;
+	margin-bottom: 2vw;
+}
+
+th {
+	position: relative;
+}
+
+th .sort-icons {
+	position: absolute;
+	right: 0.1vw;
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	transform: translateY(-80%);
+}
+
+
+th .sort-icons .asc-sort-icon {
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+
+	border-bottom: 5px solid #988;
+}
+
+th .sort-icons .desc-sort-icon {
+	margin-top: 3px;
+	width: 0;
+	height: 0;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+
+	border-top: 5px solid #988;
+}
+
+th .sort-icons .asc-sort-icon.active {
+	border-bottom: 5px solid #b22222;
+}
+
+th .sort-icons .desc-sort-icon.active {
+	border-top: 5px solid #b22222;
+}
+
+#data {
+	width: 100%;
+	overflow-x: auto;
+}
+
+.dropdown-and-dropdown-buttons {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.dropdown-and-dropdown-buttons>div:first-of-type {
+	display: flex;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 900px) and (orientation: portrait) {
+
+	h1 {
+		font-size: 2vh;
+	}
+
+	.dropdown-and-dropdown-buttons>div:first-of-type {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+	/* Dropdown styles */
+	label {
+		display: none;
+	}
+
+	select {
+		display: block;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		width: 100%;
+		max-width: 500px;
+		/* Set a maximum width if necessary */
+		padding: 8px;
+		border-radius: 8px;
+		border: 1px solid pink;
+		border-bottom-width: 2px;
+		background-color: #fff;
+		font-size: 1.85vh;
+		margin-left: 10px;
+	}
+
+	/* Button styles */
+	button {
+		padding: 10px 30px;
+		text-align: center;
+		background-color: #860303;
+		color: #fff;
+		border: none;
+		border-radius: 4px;
+		font-size: 4.8vw;
+		font-weight: bold;
+		cursor: pointer;
+		margin: 0;
+		margin-bottom: 1vh;
+		/* Adjust the margin value as needed */
+	}
+
+
+	th,
+	td {
+		font-size: 1.9vh;
+	}
+
+	tr:last-of-type>td {
+		font-size: 1.98vh;
+		padding: 1vh 0.5vh;
+	}
+
+	#buttons {
+		margin-top: 2.3vh;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	button:hover {
+		background-color: #0056b3;
+	}
+
+	#options-container {
+		padding: 0.8vh 0.5vh 0.5vh 0.5vh;
+	}
+
+	#options-container #dataavailablefrom,
+	#options-container #dataavailableupto {
+		font-size: 1.4vh;
+	}
+	
+	.inputbox {
+	   width: 90%;
+	   margin-top: 0vh;
+	   margin-bottom: 2vh;
+	   margin-left: 0;
+	  padding: 1vh 1.5vh;
+	}
+}
+
+@media screen and (max-height: 527px) and (orientation: landscape) {
+	button {
+		font-size: 3vh;
+	}
+	
+	th,td {
+	  font-size: 2vw;
+	}
+	
+	tr:last-of-type > td {
+	  font-size: 2.427vw;
+	}
+
+	#options-container {
+		padding: 0.8vw 0.5vw 0.5vw 0.5vw;
+	}
+
+	#options-container #dataavailablefrom,
+	#options-container #dataavailableupto {
+		font-size: 1.6vw;
+	}
+}

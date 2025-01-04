@@ -1,0 +1,76 @@
+.rainbowFormContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0rem!important;
+    margin-top: 15vh!important;
+}
+
+.rainbowFormContainer .alertRed{
+    width: 28rem!important;
+}
+
+.rainbowForm{
+    padding: 1rem 2rem 7rem 2rem;
+    background: linear-gradient(60deg, #06a398, #000098);
+    border-radius: 5px;
+    width: 28rem;
+    color: #ffff;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.rainbowForm h1{
+    font-family: Montserrat Bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.rainbowForm input[type="email"], .rainbowForm input[type="password"], .rainbowForm input[type="text"]{
+    width: 93%!important;
+    background: transparent;
+    transition: 0.3s linear;
+}
+
+.rainbowForm input[type="email"]:valid, .rainbowForm input[type="email"]:focus,
+.rainbowForm input[type="password"]:valid, .rainbowForm input[type="password"]:focus,
+.rainbowForm input[type="text"]:valid, .rainbowForm input[type="text"]:focus{
+    background: #fff;
+}
+
+.rainbowForm .btn{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.7rem 1rem;
+}
+
+@media(max-width: 1024px){
+    .rainbowFormContainer{
+        justify-content: center!important;
+    }
+}
+
+@media(max-width: 480px){
+    .rainbowForm{
+        width: 90vw;
+    }
+    .rainbowFormContainer .alertRed{
+        width: 80vw!important;
+    }
+    .rainbowForm .h3{
+        font-size: 1rem!important;
+    }
+    .rainbowForm .h5{
+        font-size: 1rem!important;
+    }
+    .rainbowForm label{
+        font-size: 1rem;
+    }
+    .forgotPassword{
+        font-weight: 600;
+    }
+    .gapCreator{
+        height: 5px;
+    }
+}

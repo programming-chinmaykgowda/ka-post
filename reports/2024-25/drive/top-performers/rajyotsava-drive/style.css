@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 8px;
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7xvMuP20ZlJCncfPMKnoZQ4IYUS_g2FhJcmA0ghMdHgELqM_kxmx4v5w202jMyya2TJsdi5QPtCY879yILUy5n0R4E6oUBs7PUaZFhH_6awOQiDIWVWL-WfjY0zW02Jy_n5ZPEISGURZiyyBBEcf3H09TJhxRgzA-9C8S4QS1MFL34v2dddy2FUk6yyRF/w200-h150/Untitled.jpg")
+    no-repeat center/cover;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-left {
+  width: 100px;
+  height: 60px;
+}
+
+.logo-right {
+  width: 80px;
+  height: 50px;
+  margin-top: 3px;
+}
+
+header {
+  font-size: 1.2rem;
+  width: 85vw;
+  text-align: center;
+  margin: 20px auto;
+  color: darkblue;
+}
+
+.head-name {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: -20px;
+  padding: 25px;
+  color: green;
+}
+
+.place {
+  color: darkred;
+  font-size: 1.2rem;
+  padding: 4px;
+  background: linear-gradient(to bottom, orange, white, green);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.name {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.card {
+  padding: 10px;
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container {
+  background-color: #d4f7d4;
+  border-radius: 10px;
+  max-width: 85vw;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.head-name {
+  text-align: center;
+  padding-top: 20px;
+  color: red;
+  text-decoration: underline;
+}
+
+.details {
+  background-color: rgb(255, 255, 255);
+  width: 230px;
+  height: 300px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.details,
+.container {
+  box-shadow: 0 0 10px 1px;
+}
+
+.achiever-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  border: 2px solid black;
+}
+
+/* Responsive For tab */
+
+@media (max-width: 768px) {
+  header {
+    font-size: 0.5rem;
+  }
+
+  .head-name {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 90vw;
+  }
+
+  .details {
+    width: 32vw;
+  }
+}
+
+/* for mobile */
+
+@media (max-width: 440px) {
+  header {
+    font-size: 0.6rem;
+  }
+
+  .head-name {
+    font-size: 1rem;
+  }
+
+  .achiever-img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 8px;
+  }
+
+  .place {
+    font-size: 0.5rem;
+    padding: 1px;
+  }
+
+  .name {
+    font-size: 0.6rem;
+    margin-top: 10px;
+    
+  }
+
+  p {
+    font-size: 0.5rem;
+  }
+
+  .details {
+    padding-top: 2px;
+    height: 180px;
+    width: 29vw;
+  }
+}
+
+/* for landscape mobile */
+@media (orientation: landscape) and (max-width: 1024px) {
+  header {
+    font-size: 0.6rem;
+  }
+
+  .head-name {
+    font-size: 1rem;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .place {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
+  .container {
+    width: 80vw;
+  }
+
+  .details {
+    width: 20vw;
+    height: 86vh;
+  }
+}

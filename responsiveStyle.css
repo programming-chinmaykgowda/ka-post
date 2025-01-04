@@ -1,0 +1,38 @@
+@media(max-width: 745px){
+    .h1{
+        font-size: 1.5rem!important;
+    }
+}
+
+@media(max-width: 1024px){
+    .tripleDot{
+        right: 1rem!important;
+        top: 0.5rem!important;
+    }
+    .loader h1{
+        font-size: 1.6rem!important;
+        padding: 0.5rem;
+    }
+    .message{
+        line-height: 30px;
+    }
+    .modal{
+        max-width: 70vw!important;
+        margin: 0;
+    }
+}
+
+@media(max-width: 480px){
+    .form-control.w-50{
+        width: 100%!important;
+    }
+    .materiallize.form-group label{
+        font-size: 1rem!important;
+    }
+}
+
+@media(max-width: 368px){
+    .modal-title{
+        font-size: 1rem!important;
+    }
+}
